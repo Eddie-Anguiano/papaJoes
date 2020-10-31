@@ -1,8 +1,13 @@
 /*-------------------------------*/
 /* CALCULATE REM VALUSE */
 /*-------------------------------*/
-@function rem($target, $context: 16px) {
+@function rem($target, $context: 18px) {
   @return ($target / $context) * 1rem;
+}
+
+@function space($num) {
+  $mult: $num * 9px;
+  @return rem($mult);
 }
 
 /*-------------------------------*/
