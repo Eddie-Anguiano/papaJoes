@@ -1,7 +1,12 @@
 import React, { Component } from "react";
+import Hero from "./Hero";
 
 export default class Home extends Component {
   render() {
-    return <h1 className="test">Home</h1>;
+    return (
+      <>
+        <Hero />
+      </>
+    );
   }
 }

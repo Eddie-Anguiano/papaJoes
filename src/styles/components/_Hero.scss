@@ -1,0 +1,84 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: space(10) 0;
+
+  &-heading {
+    margin-bottom: space(5);
+    font-family: $font-family--secondary;
+  }
+
+  &-text {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: space(5);
+  }
+
+  &-highlight {
+    font-family: $font-family--secondary;
+  }
+
+  &-cta {
+    padding-bottom: space(2);
+  }
+
+  &-cta:first-child {
+    color: blue;
+  }
+
+  &-btn-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: space(2);
+    width: 33%;
+    margin: 0 auto;
+  }
+
+  &-btn {
+    padding: space(1) space(2);
+
+    border-radius: $border-radius--small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-btn span {
+    font-family: $font-family--secondary;
+    padding-left: space(0.5);
+  }
+
+  &-btn-menu {
+    border: 2px solid $color--dark-red;
+    color: $color--dark-red;
+  }
+
+  &-btn-phone {
+    color: $color--white;
+    background: linear-gradient(
+      0deg,
+      rgba(119, 23, 16, 1) 29%,
+      rgba(155, 0, 0, 1) 100%
+    );
+    border: none;
+    box-shadow: 2px 2px 8px -2px darken($color--dark-red, 10%);
+  }
+
+  &-fast-icon {
+    height: 0.6rem;
+  }
+
+  &-pizza {
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    height: 250px;
+  }
+  &-shaker {
+    position: absolute;
+    bottom: space(2);
+    left: space(2);
+    height: rem(120px);
+  }
+}
