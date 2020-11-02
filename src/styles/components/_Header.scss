@@ -8,13 +8,34 @@
     flex: 2;
   }
 
-  &-link {
+  &-phone-icon {
+    font-size: rem(35px);
+    margin-right: sace(0);
+    transform: translate(-6px, 3px) rotate(40deg);
+  }
+
+  &-phone {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
     flex: 1;
     color: $color--white;
+  }
+
+  &-phone-text {
+    font-size: rem(16px);
     font-family: $font-family--secondary;
   }
 
+  &-phone-number {
+    font-size: rem(16px);
+  }
+
   &-contact {
+    flex: 1;
+    color: $color--white;
     text-align: right;
+    font-size: rem(16px);
+    font-family: $font-family--secondary;
   }
 }

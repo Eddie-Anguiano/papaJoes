@@ -23,16 +23,14 @@
     padding-bottom: space(2);
   }
 
-  &-cta:first-child {
-    color: blue;
-  }
-
   &-btn-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: space(2);
-    width: 33%;
-    margin: 0 auto;
+    justify-content: center;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // gap: space(2);
+    // width: 33%;
+    // margin: 0 auto;
   }
 
   &-btn {
@@ -50,8 +48,16 @@
   }
 
   &-btn-menu {
-    border: 2px solid $color--dark-red;
-    color: $color--dark-red;
+    color: $color--white;
+    background: linear-gradient(
+      0deg,
+      rgba(119, 23, 16, 1) 29%,
+      rgba(155, 0, 0, 1) 100%
+    );
+    border: none;
+    box-shadow: 2px 2px 8px -2px darken($color--dark-red, 10%);
+    // border: 2px solid $color--dark-red;
+    // color: $color--dark-red;
   }
 
   &-btn-phone {

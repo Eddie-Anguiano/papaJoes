@@ -1,0 +1,34 @@
+.info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(rem(280px), 1fr));
+  justify-items: center;
+  gap: space(5);
+  padding: space(10) space(6);
+}
+
+.sticky {
+  @extend %center;
+  padding: space(5);
+  text-align: center;
+  height: 100%;
+  min-height: rem(280px);
+  width: 100%;
+  max-width: rem(280px);
+  background-color: $color--yellow;
+  transform: rotate(-10deg);
+  box-shadow: 4px 4px 10px -2px rgba(3, 3, 3, 0.3);
+}
+
+.hours {
+  &-head {
+    text-align: left;
+    font-size: space(4);
+    font-family: $font-family--secondary;
+  }
+
+  &-head,
+  &-days,
+  &-open {
+    padding: space(0.5) space(2) space(0.5) 0;
+  }
+}

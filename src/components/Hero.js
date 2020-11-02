@@ -11,7 +11,7 @@ export default function Hero() {
     <section className="hero">
       <img src={pizza} alt="" className="hero-pizza" />
       <img src={shaker} alt="" className="hero-shaker" />
-      <h1 className="hero-heading">Simply The Best</h1>
+      <h2 className="hero-heading">Simply The Best</h2>
       <p className="hero-text">
         Since 1973 Pizzamania has been serving{" "}
         <span className="hero-highlight">THE VERY BEST PIZZA</span>. We built
@@ -24,20 +24,20 @@ export default function Hero() {
         supporting us through the years.
       </p>
       <div className="hero-cta">
-        <IconContext.Provider value={{ className: "hero-fast-icon" }}>
+        {/* <IconContext.Provider value={{ className: "hero-fast-icon" }}>
           <FaStream />
         </IconContext.Provider>
-        <span>Order For Pickup</span>
+        <span>Order For Pickup</span> */}
       </div>
       <div className="hero-btn-container">
         <button className="hero-btn-menu hero-btn">
           <FiBookOpen />
           <span>View Menu</span>
         </button>
-        <button className="hero-btn-phone hero-btn">
+        {/* <button className="hero-btn-phone hero-btn">
           <FiPhone />
           <span>562-944-8803</span>
-        </button>
+        </button> */}
       </div>
     </section>
   );
