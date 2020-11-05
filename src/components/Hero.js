@@ -1,8 +1,8 @@
 import React from "react";
 import { FiBookOpen } from "react-icons/fi";
-import { FiPhone } from "react-icons/fi";
-import { FaStream } from "react-icons/fa";
-import { IconContext } from "react-icons";
+// import { FiPhone } from "react-icons/fi";
+// import { FaStream } from "react-icons/fa";
+// import { IconContext } from "react-icons";
 import pizza from "../images/pizza.png";
 import shaker from "../images/shaker.png";
 

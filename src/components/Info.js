@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Map from "./Map";
 
 export default class Info extends Component {
   render() {
@@ -8,6 +9,7 @@ export default class Info extends Component {
           Due to Covid-19 restrictions the we are currently only open for pickup
           orders.
         </div>
+
         <div className="hours">
           <table className="hours-table">
             <tr className="hours-row">
@@ -43,6 +45,27 @@ export default class Info extends Component {
             </tr>
           </table>
         </div>
+
+        <Map />
+
+        <div className="info-details">
+          <h2 className="info-header">Location</h2>
+          <p>13547 Telegraph Road</p>
+          <p>Whittier Ca, 90605</p>
+          <h2 className="info-header">Contact</h2>
+          <table>
+            <tr>
+              <td>Phone:</td>
+              <td>(562) 944-8803</td>
+            </tr>
+            <tr>
+              <td>Fax:</td>
+              <td>(562) 906-1095</td>
+            </tr>
+          </table>
+        </div>
+
+        <div className="map"></div>
       </section>
     );
   }
