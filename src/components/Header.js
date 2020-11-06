@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../images/pizzamania-logo.svg";
 import { FiPhone } from "react-icons/fi";
 import { IconContext } from "react-icons";
+import { RiMenu3Fill } from "react-icons/ri";
 
 export default function Header() {
   return (
@@ -19,6 +20,13 @@ export default function Header() {
       </div>
       <img src={logo} alt="" className="header-logo" />
       <div className="header-link header-contact">Contact</div>
+      <div className="header-hamburger">
+        <IconContext.Provider value={{ className: "header-hamburger-icon" }}>
+          <div>
+            <RiMenu3Fill />
+          </div>
+        </IconContext.Provider>
+      </div>
     </header>
   );
 }

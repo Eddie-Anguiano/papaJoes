@@ -76,6 +76,10 @@
     @media (max-width: $breakpoint--md) {
       @content;
     }
+  } @else if $break == "small" {
+    @media (max-width: $breakpoint--sm) {
+      @content;
+    }
   }
 }
 

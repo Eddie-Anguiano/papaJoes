@@ -4,8 +4,17 @@
   align-items: center;
   padding: space(2) 0;
 
+  @include d1-mq("small") {
+    padding: space(1) 0;
+  }
+
   &-logo {
     flex: 2;
+    max-width: 50vw;
+
+    @include d1-mq("medium") {
+      text-align: center;
+    }
   }
 
   &-phone-icon {
@@ -20,6 +29,10 @@
     align-items: center;
     flex: 1;
     color: $color--white;
+
+    @include d1-mq("medium") {
+      visibility: hidden;
+    }
   }
 
   &-phone-text {
@@ -37,5 +50,25 @@
     text-align: right;
     font-size: rem(16px);
     font-family: $font-family--secondary;
+
+    @include d1-mq("medium") {
+      display: none;
+    }
+  }
+
+  &-hamburger {
+    display: none;
+    flex: 1;
+    padding-right: space(2);
+    text-align: right;
+
+    @include d1-mq("medium") {
+      display: inline-block;
+    }
+
+    &-icon {
+      color: $color--white;
+      font-size: space(3);
+    }
   }
 }
