@@ -11,6 +11,7 @@ function App() {
         <main className="template-main">
           <Home />
         </main>
+        <footer className="footer">&#169;Pizzamania</footer>
       </div>
     </Template>
   );
