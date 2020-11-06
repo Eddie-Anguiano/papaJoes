@@ -49,20 +49,24 @@ export default class Info extends Component {
         <Map />
 
         <div className="info-details">
-          <h2 className="info-header">Location</h2>
-          <p>13547 Telegraph Road</p>
-          <p>Whittier Ca, 90605</p>
-          <h2 className="info-header">Contact</h2>
-          <table>
-            <tr>
-              <td>Phone:</td>
-              <td>(562) 944-8803</td>
-            </tr>
-            <tr>
-              <td>Fax:</td>
-              <td>(562) 906-1095</td>
-            </tr>
-          </table>
+          <div className="info-location">
+            <h2 className="info-header">Location</h2>
+            <p>13547 Telegraph Road</p>
+            <p>Whittier Ca, 90605</p>
+          </div>
+          <div className="info-contact">
+            <h2 className="info-header">Contact</h2>
+            <table>
+              <tr>
+                <td>Phone:</td>
+                <td>(562) 944-8803</td>
+              </tr>
+              <tr>
+                <td>Fax:</td>
+                <td>(562) 906-1095</td>
+              </tr>
+            </table>
+          </div>
         </div>
 
         <div className="map"></div>

@@ -8,13 +8,20 @@
 
 .map-container {
   position: relative;
-  height: rem(400px);
-  width: 100%;
+  height: rem(300px);
+  max-width: 50vw;
+  box-shadow: 4px 4px 10px -2px rgba(3, 3, 3, 0.3);
+  overflow: hidden;
+  border-radius: $border-radius--small;
+
+  @include d1-mq("medium") {
+    max-width: 100vw;
+  }
 }
 
 .marker {
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
   background: url(../../images/pizza-slice.svg) no-repeat;
   background-size: fit;
 }

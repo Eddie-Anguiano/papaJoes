@@ -1,11 +1,27 @@
 .info {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(rem(350px), 1fr));
-  gap: space(5);
+  grid-template-columns: repeat(auto-fit, minmax(rem(300px), rem(350px)));
+  justify-content: center;
+  gap: space(10) space(5);
   padding: space(10) space(6);
 
-  &-details > * {
-    padding-bottom: space(1);
+  @include d1-mq("medium") {
+    padding: space(10) space(2);
+  }
+
+  &-location {
+    padding-right: space(4);
+    height: 0%;
+  }
+
+  &-location > * {
+    padding-bottom: space(0.37);
+  }
+
+  &-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(rem(205px), 1fr));
+    gap: space(4);
   }
 
   &-header:nth-of-type(2) {
@@ -34,5 +50,9 @@
     text-align: left;
     font-size: space(4);
     font-family: $font-family--secondary;
+  }
+
+  @include d1-mq("medium") {
+    display: flex;
   }
 }

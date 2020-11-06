@@ -3,6 +3,10 @@
 /*-------------------------------*/
 :root {
   font-size: 18px;
+
+  @include d1-mq("large-keep") {
+    font-size: 16px;
+  }
 }
 
 *,
