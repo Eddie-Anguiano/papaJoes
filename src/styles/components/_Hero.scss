@@ -13,6 +13,11 @@
     width: 50%;
     margin: 0 auto;
     margin-bottom: space(5);
+
+    @include d1-mq("small") {
+      width: 100%;
+      padding: 0 space(2);
+    }
   }
 
   &-highlight {
@@ -21,16 +26,23 @@
 
   &-cta {
     padding-bottom: space(2);
+    display: none;
+
+    @include d1-mq("medium") {
+      display: block;
+    }
   }
 
   &-btn-container {
     display: grid;
     justify-content: center;
-    // display: grid;
-    // grid-template-columns: 1fr 1fr;
-    // gap: space(2);
-    // width: 33%;
-    // margin: 0 auto;
+
+    @include d1-mq("medium") {
+      grid-template-columns: repeat(2, 150px);
+      gap: space(2);
+      width: 33%;
+      margin: 0 auto;
+    }
   }
 
   &-btn {
@@ -56,11 +68,16 @@
     );
     border: none;
     box-shadow: 2px 2px 8px -2px darken($color--dark-red, 10%);
-    // border: 2px solid $color--dark-red;
-    // color: $color--dark-red;
+
+    @include d1-mq("medium") {
+      border: 2px solid $color--dark-red;
+      color: $color--dark-red;
+      background: transparent;
+    }
   }
 
   &-btn-phone {
+    display: none;
     color: $color--white;
     background: linear-gradient(
       0deg,
@@ -69,6 +86,10 @@
     );
     border: none;
     box-shadow: 2px 2px 8px -2px darken($color--dark-red, 10%);
+
+    @include d1-mq("medium") {
+      display: block;
+    }
   }
 
   &-fast-icon {
@@ -77,14 +98,24 @@
 
   &-pizza {
     position: absolute;
-    top: -100px;
+    top: -50px;
     right: -100px;
-    height: 250px;
+    width: 26vw;
+    max-width: 350px;
+    min-width: 250px;
+
+    @include d1-mq("small") {
+      right: -130px;
+    }
   }
   &-shaker {
     position: absolute;
     bottom: space(2);
     left: space(2);
     height: rem(120px);
+
+    @include d1-mq("medium") {
+      display: none;
+    }
   }
 }

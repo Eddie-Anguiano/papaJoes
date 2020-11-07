@@ -1,8 +1,8 @@
 import React from "react";
 import { FiBookOpen } from "react-icons/fi";
-// import { FiPhone } from "react-icons/fi";
-// import { FaStream } from "react-icons/fa";
-// import { IconContext } from "react-icons";
+import { FiPhone } from "react-icons/fi";
+import { FaStream } from "react-icons/fa";
+import { IconContext } from "react-icons";
 import pizza from "../images/pizza.png";
 import shaker from "../images/shaker.png";
 
@@ -24,20 +24,20 @@ export default function Hero() {
         supporting us through the years.
       </p>
       <div className="hero-cta">
-        {/* <IconContext.Provider value={{ className: "hero-fast-icon" }}>
+        <IconContext.Provider value={{ className: "hero-fast-icon" }}>
           <FaStream />
         </IconContext.Provider>
-        <span>Order For Pickup</span> */}
+        <span>Order For Pickup</span>
       </div>
       <div className="hero-btn-container">
         <button className="hero-btn-menu hero-btn">
           <FiBookOpen />
           <span>View Menu</span>
         </button>
-        {/* <button className="hero-btn-phone hero-btn">
+        <button className="hero-btn-phone hero-btn">
           <FiPhone />
           <span>562-944-8803</span>
-        </button> */}
+        </button>
       </div>
     </section>
   );
