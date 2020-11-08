@@ -1,0 +1,10 @@
+.menu {
+  display: grid;
+  gap: space(4);
+  padding: space(4);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  &-left {
+    height: 500px;
+  }
+}

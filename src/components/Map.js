@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import mapboxgl from "mapbox-gl";
-import logo from "../images/pizzamania-logo.svg";
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoiZWFuZ3VpYW5vIiwiYSI6ImNraDA4cDFpZDBzZzMycmswOW9idTgwdHgifQ.uPNs7wwJRm2h4sI8kqUbSQ";

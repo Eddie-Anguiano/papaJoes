@@ -1,0 +1,18 @@
+.sizes {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.75fr 2fr;
+  gap: space(1);
+
+  &-indv,
+  &-small,
+  &-medium,
+  &-large {
+    display: grid;
+    gap: space(0.5);
+    text-align: center;
+  }
+
+  &-img {
+    width: 100%;
+  }
+}
