@@ -8,7 +8,9 @@ export default class Menu extends Component {
         <div className="menu-left">
           <PizzaInfo />
         </div>
-        <div className="menu-right"></div>
+        <div className="menu-right">
+          <PizzaInfo />
+        </div>
       </section>
     );
   }
