@@ -7,12 +7,18 @@
   &-small,
   &-medium,
   &-large {
-    display: grid;
-    gap: space(0.5);
+    display: flex;
+    flex-direction: column;
     text-align: center;
+  }
+
+  &-subheading {
+    font-family: $font-family--secondary;
+    padding-bottom: space(1);
   }
 
   &-img {
     width: 100%;
+    padding-bottom: space(1);
   }
 }
