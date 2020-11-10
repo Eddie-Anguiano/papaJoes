@@ -23,6 +23,11 @@
     transform: translate(-6px, 3px) rotate(40deg);
   }
 
+  &-hamburger_icon {
+    color: $color--white;
+    font-size: space(3);
+  }
+
   &-phone {
     display: flex;
     justify-content: stretch;

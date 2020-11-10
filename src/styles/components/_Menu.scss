@@ -2,8 +2,23 @@
   display: grid;
   gap: space(4);
   padding: space(4);
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(338px, 1fr));
+
+  @include d1-mq("large-keep") {
+    gap: space(2);
+    padding: space(2);
+  }
 
   &-left {
+    display: grid;
+    gap: space(4);
+  }
+
+  &-heading {
+    background-color: $color--green;
+    color: $color--white;
+    text-align: center;
+    border-radius: $border-radius--small;
+    padding: space(0.5);
   }
 }

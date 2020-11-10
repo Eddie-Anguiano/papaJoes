@@ -1,12 +1,4 @@
 .pizzaInfo {
   display: grid;
   gap: space(4);
-
-  &-heading {
-    background-color: $color--green;
-    color: $color--white;
-    text-align: center;
-    border-radius: $border-radius--small;
-    padding: space(0.5);
-  }
 }
