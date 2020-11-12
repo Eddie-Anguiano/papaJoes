@@ -59,14 +59,16 @@ export default class Info extends Component {
           <div className="info-contact">
             <h2 className="info-header">Contact</h2>
             <table>
-              <tr>
-                <td>Phone:</td>
-                <td>(562) 944-8803</td>
-              </tr>
-              <tr>
-                <td>Fax:</td>
-                <td>(562) 906-1095</td>
-              </tr>
+              <tbody>
+                <tr>
+                  <td>Phone:</td>
+                  <td>(562) 944-8803</td>
+                </tr>
+                <tr>
+                  <td>Fax:</td>
+                  <td>(562) 906-1095</td>
+                </tr>
+              </tbody>
             </table>
           </div>
         </div>
