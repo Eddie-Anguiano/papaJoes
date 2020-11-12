@@ -12,37 +12,39 @@ export default class Info extends Component {
 
         <div className="hours">
           <table className="hours-table">
-            <tr className="hours-row">
-              <th className="hours-head">Hours</th>
-            </tr>
-            <tr className="hours-row">
-              <td className="hours-days">Monday</td>
-              <td className="hours-open">10:00am - 11:30pm</td>
-            </tr>
-            <tr className="hours-row">
-              <td className="hours-days">Tuesday</td>
-              <td className="hours-open">10:00am - 11:30pm</td>
-            </tr>
-            <tr className="hours-row">
-              <td className="hours-days">Wednesday</td>
-              <td className="hours-open">10:00am - 11:30pm</td>
-            </tr>
-            <tr className="hours-row">
-              <td className="hours-days">Thursday</td>
-              <td className="hours-open">10:00am - 11:30pm</td>
-            </tr>
-            <tr className="hours-row">
-              <td className="hours-days">Friday</td>
-              <td className="hours-open">10:00am - 11:30pm</td>
-            </tr>
-            <tr className="hours-row">
-              <td className="hours-days">Saturday</td>
-              <td className="hours-open">10:00am - 11:30pm</td>
-            </tr>
-            <tr className="hours-row">
-              <td className="hours-days">Sunday</td>
-              <td className="hours-open">10:00am - 11:30pm</td>
-            </tr>
+            <tbody>
+              <tr className="hours-row">
+                <th className="hours-head">Hours</th>
+              </tr>
+              <tr className="hours-row">
+                <td className="hours-days">Monday</td>
+                <td className="hours-open">10:00am - 11:30pm</td>
+              </tr>
+              <tr className="hours-row">
+                <td className="hours-days">Tuesday</td>
+                <td className="hours-open">10:00am - 11:30pm</td>
+              </tr>
+              <tr className="hours-row">
+                <td className="hours-days">Wednesday</td>
+                <td className="hours-open">10:00am - 11:30pm</td>
+              </tr>
+              <tr className="hours-row">
+                <td className="hours-days">Thursday</td>
+                <td className="hours-open">10:00am - 11:30pm</td>
+              </tr>
+              <tr className="hours-row">
+                <td className="hours-days">Friday</td>
+                <td className="hours-open">10:00am - 11:30pm</td>
+              </tr>
+              <tr className="hours-row">
+                <td className="hours-days">Saturday</td>
+                <td className="hours-open">10:00am - 11:30pm</td>
+              </tr>
+              <tr className="hours-row">
+                <td className="hours-days">Sunday</td>
+                <td className="hours-open">10:00am - 11:30pm</td>
+              </tr>
+            </tbody>
           </table>
         </div>
 
