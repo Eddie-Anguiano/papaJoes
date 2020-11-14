@@ -10,7 +10,7 @@
 
   &-logo {
     flex: 2;
-    max-width: 50vw;
+    max-width: 50%;
 
     @include d1-mq("medium") {
       text-align: center;
