@@ -47,7 +47,7 @@ export default class Map extends Component {
             {this.state.zoom}
           </div>
         </div>
-        <div ref={(el) => (this.mapContainer = el)} className="map" />
+        <div ref={(el) => (this.mapContainer = el)} className="mapContainer" />
       </div>
     );
   }
