@@ -28,7 +28,7 @@ export default class App extends Component {
       menu = (
         <>
           <BackDrop />
-          <SideDrawer />
+          <SideDrawer menuIsActive={this.handleClick} />
         </>
       );
     }

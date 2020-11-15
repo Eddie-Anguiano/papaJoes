@@ -12,6 +12,14 @@
   background-size: space(20);
   z-index: 101;
 
+  &-close {
+    position: absolute;
+    top: space(2);
+    right: space(1);
+    color: $color--white;
+    font-size: space(4);
+  }
+
   &-item {
     color: $color--white;
     font-family: $font-family--secondary;

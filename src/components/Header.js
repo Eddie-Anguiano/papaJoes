@@ -11,12 +11,12 @@ export default class Header extends Component {
   }
 
   handleThis() {
-    alert("hello");
+    this.props.menuIsActive();
   }
 
   render() {
     return (
-      <header className="header" onClick={this.handleThis}>
+      <header className="header">
         <div className="header-phone">
           <IconContext.Provider value={{ className: "header-phone-icon" }}>
             <div>
@@ -33,7 +33,7 @@ export default class Header extends Component {
         <div className="header-hamburger">
           <IconContext.Provider value={{ className: "header-hamburger_icon" }}>
             <div>
-              <RiMenu3Fill />
+              <RiMenu3Fill onClick={this.handleThis} />
             </div>
           </IconContext.Provider>
         </div>
