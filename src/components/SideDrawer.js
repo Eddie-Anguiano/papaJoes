@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { IoMdClose } from "react-icons/io";
 import { IconContext } from "react-icons";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default class SideDrawer extends Component {
   constructor(props) {
@@ -14,7 +15,12 @@ export default class SideDrawer extends Component {
 
   render() {
     return (
-      <div className="sideDrawer">
+      <motion.div
+        animate={{ x: 0 }}
+        initial={{ x: "75vw" }}
+        exit={{ x: "75vw" }}
+        transition={{ duration: 0.1, stiffness: 100, type: "tween" }}
+        className="sideDrawer">
         <IconContext.Provider value={{ className: "sideDrawer-close" }}>
           <div>
             <IoMdClose onClick={this.handleThis} />
@@ -25,7 +31,7 @@ export default class SideDrawer extends Component {
           <li className="sideDrawer-item">Home</li>
           <li className="sideDrawer-item">About</li>
         </ul>
-      </div>
+      </motion.div>
     );
   }
 }

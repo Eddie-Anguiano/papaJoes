@@ -6,6 +6,7 @@ import Menu from "./components/Menu";
 import BackDrop from "./components/BackDrop";
 import { Route, Switch } from "react-router-dom";
 import SideDrawer from "./components/SideDrawer";
+import { motion, AnimatePresence } from "framer-motion";
 
 import React, { Component } from "react";
 
@@ -34,7 +35,8 @@ export default class App extends Component {
     }
     return (
       <Template>
-        {menu}
+        <AnimatePresence>{menu}</AnimatePresence>
+
         <div className="template-wrapper">
           <Header menuIsActive={this.handleClick} />
           <main className="template-main">
