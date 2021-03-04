@@ -7,7 +7,7 @@ export default function Info() {
   const [open, setIsOpen] = useState(false);
 
   useEffect(() => {
-    const date = new Date("December 23, 1995 23:24:00");
+    const date = new Date();
     const currentDay = date.getDay();
     const currentHour = date.getHours();
 
@@ -130,14 +130,14 @@ export default function Info() {
         <div className="info-details">
           <div className="info-location">
             <h2 className="info-header">Location</h2>
-            <div className="info-address">13547 Telegraph Road</div>
-            <div className="info-addressTwo">Whittier Ca, 90605</div>
+            <div className="info-address">17165 Bellflower Blvd</div>
+            <div className="info-addressTwo">Bellflower, CA 90706</div>
           </div>
           <div className="info-contact">
             <h2 className="info-header">Contact</h2>
-            <div className="info-telephone">Phone: (562) 944-8803</div>
-            <div className="info-telephone">Fax: (562) 944-8803</div>
-            <div className="info-telephone">email: pizza.mainia@gmail.com</div>
+            <div className="info-telephone">Phone: (562) 664-2987</div>
+            <div className="info-telephone">Fax: (562) 944-8703</div>
+            <div className="info-telephone">email: papajoes1993@gmail.com</div>
           </div>
         </div>
       </div>

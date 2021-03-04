@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "../images/pizzamania-logo.svg";
+import logo from "../images/papa-logo.svg";
 import { FiPhone } from "react-icons/fi";
 import { IconContext } from "react-icons";
 import { RiMenu3Fill } from "react-icons/ri";
@@ -25,7 +25,7 @@ export default class Header extends Component {
           </IconContext.Provider>
           <div className="header-phone-container">
             <div className="header-phone-text">Order For Pickup!</div>
-            <div className="header-phone-number">562-654-2987</div>
+            <div className="header-phone-number">562-664-2987</div>
           </div>
         </div>
         <img src={logo} alt="" className="header-logo" />

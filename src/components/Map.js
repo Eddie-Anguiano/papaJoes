@@ -8,8 +8,8 @@ export default class Map extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      lng: -118.042112,
-      lat: 33.937721,
+      lng: -118.125591,
+      lat: 33.876848,
       zoom: 15,
     };
   }

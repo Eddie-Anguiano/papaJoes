@@ -13,7 +13,7 @@ export default function Hero() {
       <img src={shaker} alt="" className="hero-shaker" />
       <h2 className="hero-heading">Simply The Best</h2>
       <p className="hero-text">
-        Since 1973 Pizzamania has been serving{" "}
+        Since 1993 Papa Joe's has been serving{" "}
         <span className="hero-highlight">THE VERY BEST PIZZA</span>. We built
         our reputation by using the finest ingredients available. We take pride
         in preparing for you, a pizza that you will enjoy and remember when you
