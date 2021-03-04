@@ -21,6 +21,13 @@
   &-time {
     margin-bottom: space(0.5);
   }
+
+  &-pizza {
+    height: space(2);
+    width: space(2);
+    margin-right: space(1);
+    transform: translateY(3px);
+  }
 }
 
 .contact-container {

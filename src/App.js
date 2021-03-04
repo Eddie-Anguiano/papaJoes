@@ -6,7 +6,7 @@ import Menu from "./components/Menu";
 import BackDrop from "./components/BackDrop";
 import { Route, Switch } from "react-router-dom";
 import SideDrawer from "./components/SideDrawer";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 import React, { Component } from "react";
 

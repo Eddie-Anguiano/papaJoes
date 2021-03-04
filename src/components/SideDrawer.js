@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { IoMdClose } from "react-icons/io";
 import { IconContext } from "react-icons";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default class SideDrawer extends Component {
   constructor(props) {
