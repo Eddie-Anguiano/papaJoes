@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FiBookOpen } from "react-icons/fi";
 import { FiPhone } from "react-icons/fi";
 import { FaStream } from "react-icons/fa";
@@ -30,10 +31,10 @@ export default function Hero() {
         <span>Order For Pickup</span>
       </div>
       <div className="hero-btn-container">
-        <button className="hero-btn-menu hero-btn">
+        <Link to="/menu" className="hero-btn-menu hero-btn">
           <FiBookOpen />
           <span>View Menu</span>
-        </button>
+        </Link>
         <button className="hero-btn-phone hero-btn">
           <FiPhone />
           <span>562-944-8803</span>

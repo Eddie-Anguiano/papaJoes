@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { IoMdClose } from "react-icons/io";
 import { IconContext } from "react-icons";
 import { motion } from "framer-motion";
@@ -6,10 +7,10 @@ import { motion } from "framer-motion";
 export default class SideDrawer extends Component {
   constructor(props) {
     super(props);
-    this.handleThis = this.handleThis.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  handleThis() {
+  handleClick() {
     this.props.menuIsActive();
   }
 
@@ -23,13 +24,19 @@ export default class SideDrawer extends Component {
         className="sideDrawer">
         <IconContext.Provider value={{ className: "sideDrawer-close" }}>
           <div>
-            <IoMdClose onClick={this.handleThis} />
+            <IoMdClose onClick={this.handleClick} />
           </div>
         </IconContext.Provider>
         <ul className="sideDrawer-list">
-          <li className="sideDrawer-item">Contact</li>
-          <li className="sideDrawer-item">Home</li>
-          <li className="sideDrawer-item">About</li>
+          <Link onClick={this.handleClick} to="/" className="sideDrawer-item">
+            Home
+          </Link>
+          <Link
+            onClick={this.handleClick}
+            to="/menu"
+            className="sideDrawer-item">
+            Menu
+          </Link>
         </ul>
       </motion.div>
     );

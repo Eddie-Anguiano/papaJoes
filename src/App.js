@@ -4,7 +4,7 @@ import Template from "./components/Template";
 import Header from "./components/Header";
 import Menu from "./components/Menu";
 import BackDrop from "./components/BackDrop";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Link } from "react-router-dom";
 import SideDrawer from "./components/SideDrawer";
 import { AnimatePresence } from "framer-motion";
 
@@ -45,7 +45,11 @@ export default class App extends Component {
               <Route exact path="/menu" component={Menu} />
             </Switch>
           </main>
-          <footer className="footer">&#169;Pizzamania</footer>
+          <footer className="footer">
+            <Link className="footer-link" to="/">
+              &#169;Papa Joe's Pizza
+            </Link>
+          </footer>
         </div>
       </Template>
     );

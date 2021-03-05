@@ -60,6 +60,7 @@
   }
 
   &-btn-menu {
+    display: block;
     color: $color--white;
     background: linear-gradient(
       0deg,
@@ -68,6 +69,7 @@
     );
     border: none;
     box-shadow: 2px 2px 8px -2px darken($color--dark-red, 10%);
+    text-decoration: none;
 
     @include d1-mq("medium") {
       border: 2px solid $color--dark-red;

@@ -15,12 +15,14 @@
   &-close {
     position: absolute;
     top: space(2);
-    right: space(1);
+    right: space(1.4);
     color: $color--white;
     font-size: space(4);
   }
 
   &-item {
+    display: block;
+    text-decoration: none;
     color: $color--white;
     font-family: $font-family--secondary;
     font-size: space(3);

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import logo from "../images/papa-logo.svg";
 import { FiPhone } from "react-icons/fi";
 import { IconContext } from "react-icons";
@@ -28,7 +29,10 @@ export default class Header extends Component {
             <div className="header-phone-number">562-664-2987</div>
           </div>
         </div>
-        <img src={logo} alt="" className="header-logo" />
+        <Link to="/" className="header-logo">
+          <img src={logo} alt="" />
+        </Link>
+
         <div className="header-link header-contact">Contact</div>
         <div className="header-hamburger">
           <IconContext.Provider value={{ className: "header-hamburger_icon" }}>

@@ -23,6 +23,10 @@
 
 .footer {
   text-align: center;
-  color: $color--white;
   padding: space(2);
+
+  &-link {
+    color: $color--white;
+    text-decoration: none;
+  }
 }
