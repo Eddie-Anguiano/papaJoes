@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import PizzaInfo from "./PizzaInfo";
-import SpecialtyPizza from "./SpecialtyPizza";
+import MenuSection from "./MenuSection";
 import Client from "../contentful";
 
 export default function Menu() {
@@ -65,9 +65,13 @@ export default function Menu() {
     <section className="menu">
       <div className="menu-left">
         <PizzaInfo />
-        <SpecialtyPizza />
+        <MenuSection foodItems={pizzas} foodType="Specialty Pizza" />
+        <MenuSection foodItems={salads} foodType="Salads" />
       </div>
-      <div className="menu-right"></div>
+      <div className="menu-right">
+        <MenuSection foodItems={apps} foodType="Appetizers" />
+        <MenuSection foodItems={sandwiches} foodType="Sandwiches" />
+      </div>
     </section>
   );
 }

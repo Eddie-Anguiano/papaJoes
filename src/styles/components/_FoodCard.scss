@@ -11,17 +11,22 @@
     display: flex;
   }
 
-  &-img {
-    flex: 1;
-    object-fit: cover;
+  &-imageContainer {
+    flex: 1.5;
     height: space(18);
+  }
+
+  &-img {
+    width: 100%;
+    height: space(18);
+    object-fit: cover;
   }
 
   &-text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 4;
+    flex: 3;
     padding-right: space(2);
   }
 
@@ -29,11 +34,6 @@
   &-prices_container {
     font-size: rem(16px);
   }
-
-  // &-prices_container {
-  //   display: flex;
-  //   justify-content: space-between;
-  // }
 
   &-price_container {
     display: inline-block;

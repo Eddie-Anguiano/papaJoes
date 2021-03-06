@@ -33,11 +33,15 @@ export default function Hero() {
       <div className="hero-btn-container">
         <Link to="/menu" className="hero-btn-menu hero-btn">
           <FiBookOpen />
+          &nbsp;
           <span>View Menu</span>
         </Link>
         <button className="hero-btn-phone hero-btn">
           <FiPhone />
-          <span>562-944-8803</span>
+          &nbsp;&nbsp;
+          <a className="hero-btn-phoneLink" href="tel:562-944-8703">
+            562-944-8703
+          </a>
         </button>
       </div>
     </section>
