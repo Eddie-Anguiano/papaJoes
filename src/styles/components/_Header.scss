@@ -11,6 +11,11 @@
   &-logo {
     flex: 2;
     max-width: 50%;
+    transition: 0.1s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
 
     @include d1-mq("medium") {
       text-align: center;
