@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 import PizzaInfo from "./PizzaInfo";
 import MenuSection from "./MenuSection";
 import Client from "../contentful";
+import Loader from "./Loader";
 
 export default function Menu() {
   const [pizzas, setPizzas] = useState([]);
   const [salads, setSalads] = useState([]);
   const [apps, setApps] = useState([]);
   const [sandwiches, setSandwiches] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   function formatData(allFoodItems) {
     const pizzaItems = allFoodItems.filter(
@@ -53,6 +55,7 @@ export default function Menu() {
         setSalads(allFood.salads);
         setSandwiches(allFood.sandwiches);
         setApps(allFood.apps);
+        setIsLoading(false);
       } catch (error) {
         console.log(error);
       }
@@ -61,8 +64,14 @@ export default function Menu() {
     fetchData();
   }, []);
 
+  // Prevent scrolling while Loader is active
+  useEffect(() => {
+    document.body.style.overflow = isLoading ? "hidden" : "unset";
+  }, [isLoading]);
+
   return (
     <section className="menu">
+      {isLoading && <Loader />}
       <div className="menu-left">
         <PizzaInfo />
         <MenuSection foodItems={pizzas} foodType="Specialty Pizza" />

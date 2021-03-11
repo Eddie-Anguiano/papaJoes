@@ -33,7 +33,7 @@ export default class Header extends Component {
           <img src={logo} alt="" />
         </Link>
 
-        <div className="header-link header-contact">Contact</div>
+        <div className="header-link header-contact"></div>
         <div className="header-hamburger">
           <IconContext.Provider value={{ className: "header-hamburger_icon" }}>
             <div>
